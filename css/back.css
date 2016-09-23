@@ -1,0 +1,14 @@
+.jumbotron {
+    background-image: url(../img/image-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    padding: 125px 30px;
+    
+    color: white; 
+    text-shadow: 2px 1px 1px rgb(0,0,0);
+}
+
+.pk {
+    color: gray;
+}
