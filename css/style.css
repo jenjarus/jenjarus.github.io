@@ -1,0 +1,564 @@
+//=====Общее=====
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: "Intro";
+    src: url("../fonts/intro.eot");
+    src: url("../fonts/intro.ttf") format('truetype'), 
+         url("../fonts/intro.svg") format('svg'),
+         url("../fonts/intro.otf") format('opentype'),
+         url("../fonts/intro.woff") format('woff');
+}
+
+@font-face {
+    font-family: "TGA";
+    src: url("../fonts/TeX_Gyre_Adventor.eot");
+    src: url("../fonts/TeX_Gyre_Adventor.ttf") format('truetype'), 
+         url("../fonts/TeX_Gyre_Adventor.svg") format('svg'),
+         url("../fonts/TeX_Gyre_Adventor.otf") format('opentype'),
+         url("../fonts/TeX_Gyre_Adventor.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WS";
+    src: url("../fonts/Web_Serveroff.eot");
+    src: url("../fonts/Web_Serveroff.ttf") format('truetype'), 
+         url("../fonts/Web_Serveroff.svg") format('svg'),
+         url("../fonts/Web_Serveroff.otf") format('opentype'),
+         url("../fonts/Web_Serveroff.woff") format('woff');
+}
+
+html, body {
+    margin: 0 auto;
+    height: 100%;
+    width: 1050px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	text-align: left;
+}
+
+
+.background {
+    background: #f0f0f0;
+    width: 100%;
+    /*padding: 20px;*/
+}
+
+.left {
+    float: left;
+}
+
+.door {
+    width: 145px;
+    margin: 10px;
+}
+
+a, p, h2, img{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover.but-hov {
+    color: #140ca5;
+}
+
+a:active.but-act {
+    color: #534ccf;
+}
+
+.all_h2 {
+    font-family: TGA;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.slider {
+    width: 95%;
+    margin: auto;
+}
+
+/*=====Заголовок сайта=====*/
+
+.top {
+    clear: left;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.top div {
+    height: 75px;
+}
+
+.top-vhod {
+    background: #ee1c24;
+    padding: 0px 20px;
+    width: 245px;
+    /*height: 90px;*/
+}
+
+.top-vhod h2 {
+    font-family: WS;
+    font-weight: lighter;
+    font-size: 34px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.top-logo {
+    margin-left: 50px; 
+    padding-right: 25px;
+}
+
+.top-logo img {
+    padding-top: 20px;
+}
+
+.top-diviz {
+     margin-left: 25px;
+}
+
+.top-diviz p {
+    font-family: WS;
+    font-weight: lighter;
+    font-size: 26px;
+    text-align: left;
+    line-height: 0.8em;
+    border-left: 1px grey solid;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.top-mail {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.top-mail a {
+    font-family: TGA;
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+    padding-top: 50px;
+    padding-left: 7px;
+}
+
+.top-mail img {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+/*//=====Навигация=====*/
+
+.nav {
+    clear: left;
+    margin-bottom: 20px;
+}
+
+.nav-inline li{
+    display: inline;
+    text-transform: uppercase;
+	padding:0 25px;
+    border-right: 1px grey solid;
+}
+
+.nav-inline li+li+li+li+li {
+    border: none;
+}
+
+.nav-inline a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-karta {
+    margin-top: 7px;
+    margin-left: 175px;
+}
+
+.nav-karta a {
+	color: red;
+    font-size: 12px;
+}
+
+/*//=====Блок с картинками=====*/
+
+.carousel_top {
+    clear: left;
+    width: 100%;
+}
+
+.carousel_top-carousel {
+    width: 800px;
+}
+
+.carousel_top-carousel-div {
+    margin: 0 4px;
+}
+
+.carousel_top-katalog {
+    float: right;
+    background-image: url("../images/Top-carus_right.jpg");
+    margin-right: 33px;
+    width: 211px;
+    height: 332px;
+}
+
+.carousel_top-katalog h2 {
+    margin: 40px 0 0 40px;
+    font-family: WS;
+    font-weight: lighter;
+    font-size: 32px;
+    color: white;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+.carousel_top-katalog-pdf {
+    position: relative;
+    margin: 0 30px;
+    top: 80px;
+}
+
+.carousel_top-katalog-pdf img {
+    float: left;
+    position: relative;
+    bottom: 7px;
+    margin-right: 7px;
+}
+
+.carousel_top-katalog-pdf a {
+    float: left;
+    color: white;
+}
+
+/*//=====Блок о дверях=====*/
+
+.top_info {
+    clear: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.top_info-left {
+    width: 300px;
+    height: 375px;
+}
+
+.top_info-left p {
+    font-family: TGA;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+.top_info-left ul {
+    list-style: none;
+    padding: 15px 20px 0 30px;
+}
+
+.top_info-left li {
+    background: url("../images/Dver.png") no-repeat;
+    background-position: left 0;
+    padding-left:46px;
+    padding-bottom: 15px;
+    margin-left: 6px;
+}
+
+.top_info-left li+li {
+    background: url("../images/Flag.png") no-repeat;
+    background-position: left 15%;
+    padding-left:50px;
+    margin-left:0px;
+}
+
+.top_info-left li+li+li {
+    background: url("../images/Star.png") no-repeat;
+    background-position: left 0;
+    padding-left:50px;
+    margin-left:0px;
+}
+
+.top_info-left li+li+li+li {
+    background: url("../images/Koshel.png") no-repeat;
+    background-position: left 35%;
+    padding-left:50px;
+    margin-left:0px;
+}
+
+.top_info-left li+li+li+li+li {
+    background: url("../images/Key.png") no-repeat;
+    background-position: left 20%;
+    padding-left:50px;
+    margin-left:0px;
+}
+
+.top_info-left li+li+li+li+li+li {
+    background: url("../images/Autos.png") no-repeat;
+    background-position: left 20%;
+    padding-left:50px;
+    margin-left:0px;
+}
+
+.top_info-right {
+    margin-left: 7px;
+    width: 670px;
+    height: 355px;
+    padding: 10px 20px;
+}
+
+.top_info-right a {
+	display: block;
+    font-family: TGA;
+    font-size: 10pt;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    width: 133px;
+    
+}
+
+.top_info-right p {
+    padding: 10px 0;
+}
+
+.top_info-right img {
+	float: right;
+    position: relative;
+    top: 4px;
+}
+
+.top_info-right-stand {
+    width: 145px;
+    float: left;
+}
+
+.top_info-right-stand a {
+    background: #ee1c24;
+}
+
+.top_info-right-prest a {
+    background: #ffa300;
+}
+
+.top_info-right-lyks a {
+    background: #355194;
+}
+
+.top_info-right-elit a {
+    background: #5e1835;
+}
+
+/*//=====Блок о компании=====*/
+
+.mid_info {
+    clear: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mid_info h2 {
+    padding: 20px 0;
+}
+
+.mid_info-left {
+	padding: 20px;
+	width: 440px;
+    line-height: 1.5em;
+}
+
+
+.mid_info-left img {
+    padding-left: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.mid_info-right {
+	padding: 20px;
+    width: 500px;
+}
+
+.mid_info-right h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*//====Блок о принципах работы====*/
+
+.mid2_info {
+    clear: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.mid2_info-top {
+    padding: 20px 30px 0 30px;
+    
+}
+
+.mid2_info-top img {
+    padding-left: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.mid2_info-left, .mid2_info-right {
+	width: 460px;
+    padding: 20px 30px;
+}
+
+/*//====Блок о порядке работы====*/
+
+.bott_info {
+    clear: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bott_info-top {
+    padding: 20px 30px;
+    padding-bottom: 10px;
+}
+
+.bott_info-spisok ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    height: 160px;
+}
+
+.bott_info-spisok li {
+	float: left;
+	width: 300px;
+    margin-left: 20px;
+    line-height: 1.4em;
+}
+
+.bott_info-spisok li:before {
+    float: left;
+    font-family: TGA;
+    font-weight: bold;
+    content: "1.";
+    color: red;
+    font-size: 60px;
+    line-height: 2.4em;
+}
+
+.bott_info-spisok li+li:before {
+    content: "2.";
+}
+
+.bott_info-spisok li+li+li:before {
+    content: "3.";
+}
+
+.bott_info-spisok p {
+    margin-left: 70px;
+}
+
+.bott_info-spisok-podpis {
+    /*display: block;*/
+	background: #FF0000;
+	font-family: TGA;
+    font-size: 14px;
+    color: white;
+	padding: 4px 8px;   
+    margin-bottom: 10px;
+    width: 170px;
+}
+
+p.wdh_p1 {
+    margin-left: 60px; 
+}
+
+p.wdh_p2 {
+    margin-left: 60px; 
+    width: 145px;
+}
+
+p.wdh_p3 {
+    margin-left: 60px; 
+    width: 185px;
+}
+
+/*//====Блок о отзывах====*/
+
+.otziv {
+    clear: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.otziv-top {
+    text-align: center;
+    padding: 25px 0;
+}
+
+div.otziv-carusel-div {
+    margin: 0px 20px;
+}
+
+/*//====Низ сайта====*/
+
+.foo {
+    clear: left;
+    width: 100%;
+    height: 60px;
+}
+
+.foo div {
+    margin-right: 20px;
+}
+
+.foo-logo {
+    background: #ee1c24;
+    padding: 0 20px;
+    height:100%;
+}
+
+.foo-logo h2 {
+    font-family: WS;
+    font-weight: lighter;
+    color: white;
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.foo-logo img {
+    float: left;
+    padding-top: 5px;
+}
+
+.foo-copy {
+    margin-top: 20px;
+}
+
+.foo-mail {
+    margin-top: 20px;
+}
+
+.foo-mail a {
+    padding-left: 7px;
+    color: red;
+}
+
+.foo-design {
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: grey;
+}
+
+.foo-design-logo {
+	font-family: Intro;
+}
